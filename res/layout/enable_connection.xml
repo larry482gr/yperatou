@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+   	android:id="@+id/enCon"
+   	android:layout_width="wrap_content"
+   	android:layout_height="match_parent"
+   	android:padding="3dp"
+   	android:background="@color/transparent"
+   	android:orientation="vertical"
+   	tools:context=".MainMenu" >
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   		xmlns:tools="http://schemas.android.com/tools"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_centerHorizontal="true"
+   		android:layout_below="@+id/enCon"
+   		android:layout_marginTop="90dp"
+   		android:padding="3dp"
+   		android:background="@color/lightGrey"
+   		android:orientation="vertical" >
+   	
+    <TextView
+        android:id="@+id/textView1"
+        android:background="@color/grey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/connectionRequired"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/wifi" />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+       	android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/data" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/personalInfo"
+        android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

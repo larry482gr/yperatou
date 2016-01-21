@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+    
+    <RelativeLayout
+        android:id="@+id/googleAds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+        
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="a15163254c75b85"
+                         ads:adSize="SMART_BANNER"
+                         ads:testDevices="TEST_EMULATOR, C2573FB452196C6046C117E6D5284D0A"
+                         ads:loadAdOnCreate="true"/>
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/googleAds"
+        android:background="@drawable/instructions"
+        android:clickable="true"
+    	android:onClick="hideInstructions" >
+    
+    </RelativeLayout>
+
+</RelativeLayout>

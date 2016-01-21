@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent" >
+
+    <TextView
+        android:id="@+id/gameoverLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textIsSelectable="false" />
+    
+    <TextView
+        android:id="@+id/gameStatsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameoverLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/gameStats"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textIsSelectable="false" />
+    
+    <TextView
+        android:id="@+id/gameStatsDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameStatsLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textIsSelectable="false" />
+    
+    <RelativeLayout
+        android:id="@+id/gameStatsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameStatsDifficulty"
+        android:layout_centerHorizontal="true" >
+        
+    <TextView
+        android:id="@+id/gamesPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameStatsDifficulty"
+        android:layout_marginTop="14dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/gameStats"
+        android:textColor="@color/white"
+        android:textIsSelectable="false" />
+    
+    <TextView
+        android:id="@+id/gamesWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gamesPlayed"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/gameStats"
+        android:textColor="@color/white"
+        android:textIsSelectable="false" />
+    
+    <TextView
+        android:id="@+id/winningPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gamesWon"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/gameStats"
+        android:textColor="@color/white"
+        android:textIsSelectable="false" />
+    
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameStatsLayout"
+        android:layout_centerHorizontal="true" >
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"    
+        android:layout_marginTop="40dp"
+        android:onClick="newGame"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/newGame"
+        android:textColor="@color/white" />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="quit"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/quitGame"
+        android:textColor="@color/white" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

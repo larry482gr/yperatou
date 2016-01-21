@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yperatou (beta)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="instructions">Οδηγίες</string>
+    <string name="startGame">Play!</string>
+    <string name="difficultyLabel">Choose Difficulty</string>
+    <string name="difficultyEasy">Easy</string>
+    <string name="difficultyNormal">Normal</string>
+    <string name="difficultyHard">Hard</string>
+    <string name="title_activity_start_game">Yperatou</string>
+    <string name="buttonsLabel">ΣΥΓΚΡΙΣΗ</string>
+    <string name="yearButton">Έτος κατασκευής</string>
+    <string name="velocityButton">Χλμ/Ώρα</string>
+    <string name="horsepowerButton">Ίπποδύναμη</string>
+    <string name="torqueButton">Ροπή</string>
+    <string name="ccButton">Κυβισμός</string>
+    <string name="cylindersButton">Κύλινδροι</string>
+    <string name="win">YOU WON!</string>
+    <string name="lose">GAME OVER</string>
+    <string name="newGame">New Game</string>
+    <string name="quitGame">Quit</string>
+    <string name="gameStats">Game Stats</string>
+    <string name="connectionRequired">This app requires an active\nnetwork connection to run</string>
+    <string name="personalInfo">Network connection is required for some ads to be shown.No personal, location or any other info will be collected.</string>
+    <string name="wifi">Enable Wi-Fi</string>
+    <string name="data">Enable Data Connection</string>
+
+</resources>
